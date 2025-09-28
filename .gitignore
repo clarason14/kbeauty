@@ -1,0 +1,28 @@
+# macOS system files
+.DS_Store
+
+# Python virtual environments
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Local config / credentials
+config/
+cookies.json
+cookies/
+
+# Data files (keep local unless intentionally shared)
+data/
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+
