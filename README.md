@@ -60,6 +60,9 @@ kbeauty-virality-to-sales/
   - Follower count of video authors  
 
 ### 3. **Model Performance**
+
+![Model Comparison](results/model_comparison.png)
+
 - **XGBoost** achieved the best trade-off between accuracy and AUC.  
 - **Logistic Regression** offered interpretability but lower predictive power.  
 - Random Forest lagged behind in generalization.
