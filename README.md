@@ -61,7 +61,7 @@ kbeauty-virality-to-sales/
 
 ### 3. **Model Performance**
 
-![Model Comparison](results/model_comparison.png)
+<img src="results/model_comparison.png" alt="Model Comparison" width="400"/>
 
 - **XGBoost** achieved the best trade-off between accuracy and AUC.  
 - **Logistic Regression** offered interpretability but lower predictive power.  
