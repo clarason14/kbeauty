@@ -93,7 +93,10 @@ We compared **brand mentions** (volume) with **average engagement** (effectivene
 
 ## 5. Data & Resources
 
-- Cross-validation results: [model_comparison_cv.csv](../model_comparison_cv.csv)  
-- Feature importances: [feature_importances_grouped_avg.csv](../feature_importances_grouped_avg.csv)  
-- Brand stats: [brand_stats.csv](../brand_stats.csv)  
+## 5. Data & Resources
+
+- Cross-validation results: [model_comparison_cv.csv](../results/model_comparison_cv.csv)  
+- Feature importances: [feature_importances_grouped_avg.csv](../results/feature_importances_grouped_avg.csv)  
+- Brand stats: [brand_stats.csv](brand_stats.csv)  
+
 
