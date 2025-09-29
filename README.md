@@ -62,6 +62,13 @@ kbeauty-virality-to-sales/
 - Virality is driven by **community resonance** more than brand size.
 
 ### 2. **Feature Importances**
+
+<p align="center">
+  <img src="results/feature_importance.png" alt="Top Feature Importances" width="400"/>
+  <br/>
+  <em>Figure 3. Feature importance by group (percentage contribution)</em>
+</p>
+
 - Top predictors of virality:  
   - Engagement ratio (likes/comments per view)  
   - Co-hashtag diversity  
