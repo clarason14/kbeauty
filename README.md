@@ -1,80 +1,83 @@
-K-Beauty Virality to Sales
+# ✨ K-Beauty Virality to Sales ✨
 
-This project analyzes the relationship between TikTok virality and sales signals in the Korean beauty (K-beauty) market. By collecting TikTok data (hashtags, video stats, captions) and combining it with downstream analysis, the goal is to understand how online engagement translates into brand visibility and product performance.
+This project explores how **TikTok virality** influences visibility and sales in the **Korean beauty (K-Beauty)** market.  
+We collect TikTok data, clean it into a structured dataset, and analyze engagement trends, brand visibility, and predictive models of virality.
 
-📂 Repository Structure
+---
+
+## 📂 Repository Structure
+
+''
 kbeauty-virality-to-sales/
-├── analysis/                  # Scripts for descriptive stats, modeling, brand analysis
-├── scraping/                  # TikTok scraping scripts
-├── data/final/                # Final dataset used in analysis
-├── results/                   # Processed outputs & model evaluation
-│   ├── feature_importances_grouped_avg.csv
-│   ├── feature_importances_grouped_summary.csv
-│   ├── feature_importances_xgboost.csv
-│   ├── model_comparison_cv.csv
-│   └── figures/               # Visualizations for README + analysis
-│       ├── brand_mentions.png
-│       ├── engagement_vs_mentions.png
-│       └── model_performance.png
-├── utils/                     # Helper functions
-├── requirements.txt
-├── .gitignore
-└── README.md
+├── analysis/ # Scripts for descriptive stats, brand-level and model analysis
+├── scraping/ # TikTok scraping scripts
+├── data/
+│ └── final/ # Final cleaned dataset used for analysis
+├── results/ # Model outputs and figures
+├── utils/ # Helper functions
+├── requirements.txt # Dependencies
+└── .gitignore
+''
 
-⚙️ Workflow
+---
 
-Data Collection – TikTok scraping for hashtags, captions, stats.
+## 🔎 Analysis Modules
 
-Data Cleaning – Deduplication + enrichment → data/final/tiktok_with_followers_with_counts.csv.
+### 1. **Descriptive Analysis**
+- File: `analysis/tiktok_descriptive_analysis.py`
+- Purpose: Exploratory Data Analysis (EDA) on TikTok metrics
+- Outputs: Engagement distributions, hashtag patterns, brand-level statistics
 
-Analysis – Descriptive analysis, brand-level trends, model comparison.
+### 2. **Brand Analysis**
+- File: `analysis/brand_analysis.py`
+- Purpose: Quantify mentions and engagement per brand
+- Outputs:  
+  - `brand_stats.csv`  
+  - `brand_video_counts.csv`  
+  - `hashtag_stats.csv`  
+  - `product_stats.csv`
 
-Results – Feature importances, virality predictors, model benchmarks.
+### 3. **Model Comparison**
+- File: `analysis/tiktok_model_comparison.py`
+- Purpose: Compare predictive performance across ML models (Logistic Regression, Random Forest, SVM, XGBoost, Neural Networks)
+- Outputs:  
+  - `results/model_comparison_cv.csv`  
+  - Feature importance files for interpretability
 
-🔑 Key Insights
+---
 
-Virality is not just volume of mentions — smaller brands like TIRTIR and Rom&nd punch above their weight compared to giants like COSRX.
+## 📊 Key Results
 
-Engagement ratios and co-hashtags outperform raw mention counts for predicting virality.
+### 1. **Brand Mentions vs. Engagement**
+- Challenger brands like **TIRTIR** and **Rom&nd** show disproportionately high engagement compared to dominant brands like COSRX.  
+- Virality is driven by **community resonance** more than brand size.
 
-XGBoost and Neural Networks showed stronger performance than baseline models, but Logistic Regression offered more interpretability.
+### 2. **Feature Importances**
+- Top predictors of virality:  
+  - Engagement ratio (likes/comments per view)  
+  - Co-hashtag diversity  
+  - Follower count of video authors  
 
-📊 Results & Visuals
+### 3. **Model Performance**
+- **XGBoost** achieved the best trade-off between accuracy and AUC.  
+- **Logistic Regression** offered interpretability but lower predictive power.  
+- Random Forest lagged behind in generalization.
 
-1. Brand Mentions vs. Engagement
+---
 
+## 🗂 Data
 
-Smaller challenger brands achieve higher engagement per mention, while dominant brands often show diminishing returns.
+- **Final dataset**:  
+  - `data/final/tiktok_with_followers_with_counts.csv`  
+  - Cleaned TikTok dataset with video stats, author followers, and hashtag features  
 
-2. Feature Importances (XGBoost)
+- **Intermediate CSVs** are excluded via `.gitignore` to keep the repo lightweight.
 
+---
 
-Follower count, co-hashtag diversity, and engagement ratios were the top predictors of virality.
+## 🚀 Getting Started
 
-3. Model Comparison
-
-
-XGBoost achieved the best balance between accuracy and AUC, while Random Forests lagged in generalization.
-
-🚀 Getting Started
+Clone the repository:
+```bash
 git clone https://github.com/clarason14/kbeauty.git
 cd kbeauty-virality-to-sales
-pip install -r requirements.txt
-
-
-Run scraping:
-
-python scraping/tiktok_discovery_main.py
-
-
-Run analysis:
-
-python analysis/brand_analysis.py
-
-📌 Next Steps
-
-Add Amazon reviews & sales data for virality-to-sales linkage.
-
-Incorporate Google Trends for search demand signals.
-
-Deploy Power BI / Streamlit dashboards for interactive exploration.
