@@ -7,17 +7,18 @@ We collect TikTok data, clean it into a structured dataset, and analyze engageme
 
 ## 📂 Repository Structure
 
-''
+
+```bash
 kbeauty-virality-to-sales/
-├── analysis/ # Scripts for descriptive stats, brand-level and model analysis
-├── scraping/ # TikTok scraping scripts
+├── analysis/        # Scripts for descriptive stats, brand-level and model analysis
+├── scraping/        # TikTok scraping scripts
 ├── data/
-│ └── final/ # Final cleaned dataset used for analysis
-├── results/ # Model outputs and figures
-├── utils/ # Helper functions
+│   └── final/       # Final cleaned dataset used for analysis
+├── results/         # Model outputs and figures
+├── utils/           # Helper functions
 ├── requirements.txt # Dependencies
 └── .gitignore
-''
+```
 
 ---
 
