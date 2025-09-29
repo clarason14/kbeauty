@@ -50,6 +50,14 @@ kbeauty-virality-to-sales/
 ## 📊 Key Results
 
 ### 1. **Brand Mentions vs. Engagement**
+
+<p align="center">
+  <img src="results/mentions_vs_engagements.png" alt="Brand Engagement vs Mentions" width="400"/>
+  <br/>
+  <em>Figure 2. Brand Engagement vs Mentions</em>
+</p>
+
+
 - Challenger brands like **TIRTIR** and **Rom&nd** show disproportionately high engagement compared to dominant brands like COSRX.  
 - Virality is driven by **community resonance** more than brand size.
 
@@ -61,7 +69,11 @@ kbeauty-virality-to-sales/
 
 ### 3. **Model Performance**
 
-<img src="results/model_comparison.png" alt="Model Comparison" width="400"/>
+<p align="center">
+  <img src="results/model_comparison.png" alt="Model Comparison" width="400"/>
+  <br/>
+  <em>Figure 1. Model Comparison across Accuracy, F1, and AUC</em>
+</p>
 
 - **XGBoost** achieved the best trade-off between accuracy and AUC.  
 - **Logistic Regression** offered interpretability but lower predictive power.  
