@@ -56,7 +56,7 @@ We averaged feature importance across folds and models.
 > Virality is driven by *content quality and community response*, not just size of the audience. This explains why challenger brands can punch above their weight.
 
 #### Visual: Feature Importances
-<img src="../results/feature_importances_grouped_avg.png" alt="Top Feature Importances" width="600"/>
+<img src="../results/feature_importance.png" alt="Top Feature Importances" width="600"/>
 
 ---
 
