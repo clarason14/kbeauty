@@ -27,7 +27,7 @@ We tested five machine learning models (Logistic Regression, Random Forest, SVM,
 > Viral prediction is not just about raw accuracy. Models like Random Forests are reliable classifiers, but XGBoost offers better *ranking power* — important for prioritizing content in recommendation systems.
 
 #### Visual: Model Comparison
-<img src="figures/model_comparison.png" alt="Model Comparison" width="600"/>
+<img src="../results/model_comparison.png" alt="Model Comparison" width="600"/>
 
 ---
 
@@ -56,7 +56,7 @@ We averaged feature importance across folds and models.
 > Virality is driven by *content quality and community response*, not just size of the audience. This explains why challenger brands can punch above their weight.
 
 #### Visual: Feature Importances
-<img src="figures/feature_importances.png" alt="Top Feature Importances" width="600"/>
+<img src="../results/feature_importances_grouped_avg.png" alt="Top Feature Importances" width="600"/>
 
 ---
 
@@ -78,7 +78,7 @@ We compared **brand mentions** (volume) with **average engagement** (effectivene
 > TikTok virality in K-Beauty is less about sustained presence and more about *spikes created by the right product at the right time*.  
 
 #### Visual: Brand Engagement vs Mentions
-<img src="figures/brand_scatter.png" alt="Brand Engagement vs Mentions" width="600"/>
+<img src="../results/mentions_vs_engagements.png" alt="Brand Engagement vs Mentions" width="600"/>
 
 ---
 
