@@ -82,3 +82,26 @@ Clone the repository:
 ```bash
 git clone https://github.com/clarason14/kbeauty.git
 cd kbeauty-virality-to-sales
+Install dependencies:
+
+pip install -r requirements.txt
+```
+
+Run scraping:
+```
+python scraping/tiktok_discovery_main.py
+```
+
+Run analysis:
+```
+python analysis/brand_analysis.py
+```
+
+
+📌 Next Steps
+
+Add Amazon reviews & sales data to link virality with actual purchases.
+
+Incorporate Google Trends to track search demand.
+
+Build Streamlit or Power BI dashboards for interactive exploration.
